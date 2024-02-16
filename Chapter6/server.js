@@ -86,27 +86,6 @@ function constructAddressSpace(server) {
         }
     });
 
-    const nodeVariable5 = namespace.addVariable({
-        componentOf: myDevice,
-        nodeId: "s=CPU",
-        browseName: "Percentage CPU Used",
-        dataType: "Double",
-        minimumSamplingInterval: 1000,
-        value: {
-            get: () => {
-const previousUsage = process.cpuUsage();
-              const startDate = Date.now();
-              while (Date.now() - startDate < 500);
-
-// At this moment you can expect result 100%
-// Time is *1000 because cpuUsage is in us (microseconds)
-const usage = process.cpuUsage(previousUsage);
-const value = 100 * (usage.user + usage.system) / ((Date.now() - startDate) * 1000)
-                return new Variant({ dataType: DataType.Double, value: value });
-            }
-        }
-    });
-
     // please 
 }
 
