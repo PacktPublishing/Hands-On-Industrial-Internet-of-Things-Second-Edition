@@ -1,0 +1,23 @@
+version: '2'
+services:
+  nodered:
+    image: iiot-book-2/node-red-opc-influxdb
+    build: ./node-red
+    ports:
+        - "1880:1880"
+    volumes:
+        - ./data:/data
+  influxdb:
+    image: influxdb:latest
+    ports:
+      - '8086:8086'
+    volumes:
+      - ./data:/var/lib/influxdb
+    environment:
+      - INFLUXDB_DB=db0
+      - INFLUXDB_ADMIN_USER=amin
+      - INFLUXDB_ADMIN_PASSWORD=00000000
+  opc-ua-server:
+      build: ./node-opcua-sampleserver
+      ports:
+        - "26543:26543"

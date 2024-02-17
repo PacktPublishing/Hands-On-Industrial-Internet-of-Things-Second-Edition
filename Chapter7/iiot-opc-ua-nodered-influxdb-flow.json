@@ -1,0 +1,35 @@
+[
+    {
+        "id": "2e7162530860a20d",
+        "type": "influxdb out",
+        "z": "a5407cac0f6659b0",
+        "influxdb": "6739f3023b5e5af6",
+        "name": "",
+        "measurement": "node-red-cpu",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "myorg",
+        "bucket": "mybucket",
+        "x": 780,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "6739f3023b5e5af6",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "database",
+        "name": "",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "2.0",
+        "url": "http://influxdb:8086",
+        "timeout": "10",
+        "rejectUnauthorized": true
+    }
+]
