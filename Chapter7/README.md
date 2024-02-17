@@ -41,13 +41,16 @@ Run your Docker container:
 
 work with TSDB
 ==============
-Create data directiry
+Create data directory:
+
     mkdir data
 
-Build the 2 images
+Build the 2 images:
+
     docker compose build 
 
 The we can start the 3 servers using: 
+
     docker compose up 
 
 
