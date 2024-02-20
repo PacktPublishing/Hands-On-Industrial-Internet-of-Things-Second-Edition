@@ -1,0 +1,38 @@
+version: "3"
+services:
+  mosquitto:
+    container_name: mosquitto
+    image: eclipse-mosquitto
+    volumes:
+    - "./mosquitto/config:/mosquitto/config"
+    - "./mosquitto/log:/mosquitto/log"
+    - "./mosquitto/data/:/mosquitto/data"
+    ports:
+    - "1883:1883"
+    networks: 
+    - iiot-book-2-net
+  telegraf:
+    container_name: telegraf
+    image: telegraf
+    depends_on:
+      - influxdb
+      - mosquitto
+    volumes:
+    - "./telegraf:/etc/telegraf"
+    networks: 
+    - iiot-book-2-net
+  influxdb:
+    image: influxdb:latest
+    ports:
+      - '8086:8086'
+    volumes:
+      - ./data:/var/lib/influxdb
+    environment:
+      - INFLUXDB_DB=db0
+      - INFLUXDB_ADMIN_USER=amin
+      - INFLUXDB_ADMIN_PASSWORD=00000000
+    networks: 
+    - iiot-book-2-net
+networks:
+    iiot-book-2-net: 
+      external: true
