@@ -13,4 +13,10 @@ on windows
 
 
 on .env add apache-airflow-providers-influxdb
+
+   docker compose up airflow-init
    docker compose up
+
+
+to stop
+   docker compose down --volumes --remove-orphans
