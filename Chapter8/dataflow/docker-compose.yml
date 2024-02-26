@@ -29,8 +29,12 @@ services:
       - ./data:/var/lib/influxdb
     environment:
       - INFLUXDB_DB=db0
-      - INFLUXDB_ADMIN_USER=amin
-      - INFLUXDB_ADMIN_PASSWORD=00000000
+      - DOCKER_INFLUXDB_INIT_MODE=setup
+      - DOCKER_INFLUXDB_INIT_USERNAME=admin
+      - DOCKER_INFLUXDB_INIT_PASSWORD=00000000
+      - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=my-super-secret-auth-token
+      - DOCKER_INFLUXDB_INIT_ORG=myorg
+      - DOCKER_INFLUXDB_INIT_BUCKET=mybucket
     networks: 
     - iiot-book-2-net
 networks:
