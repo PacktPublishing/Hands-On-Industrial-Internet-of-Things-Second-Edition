@@ -17,6 +17,8 @@ on .env add apache-airflow-providers-influxdb
    docker compose up airflow-init
    docker compose up
 
+to check
+   docker ps --format '{{.Names}}'
 
 to stop
    docker compose down --volumes --remove-orphans
