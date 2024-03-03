@@ -22,3 +22,9 @@ to check
 
 to stop
    docker compose down --volumes --remove-orphans
+
+
+
+## external run
+
+    curl -H "Content-type: application/json" -H "Accept: application/json" -X POST --user "airflow:airflow" "http://localhost:8080/api/v1/dags/ruledag/dagRuns" -d '{"conf": {"sensor":"sensors/edge1/cpu/0", "value": 100}}'

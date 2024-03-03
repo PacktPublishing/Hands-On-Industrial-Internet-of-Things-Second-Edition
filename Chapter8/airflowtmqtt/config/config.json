@@ -1,0 +1,6 @@
+{
+    "sensors/edge1/cpu/0": [
+        {"ruledag": {"param1":"value1", "threshold":99}}
+    ]
+
+}
