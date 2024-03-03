@@ -24,12 +24,12 @@ def on_connect(client, userdata, flags, reason_code, properties):
 
 def call(url, username,password, msg):
     headers = {"Content-type": "application/json", "Accept": "application/json"}
-    msg = str(msg).replace("'","\"")
+
     try:
         with requests.session() as s:
             print(url, msg)
             response = s.post(url, 
-                                data=msg, 
+                                data=json.dumps(msg), 
                                 auth=(username, password),
                                 headers=headers)
             print("Status Code", response.status_code, response.content)
@@ -45,10 +45,11 @@ def on_message(client, userdata, msg):
                 url = STATIC.airflow_endpoint.format(analytic=analytic_name)
                 username = STATIC.airflow_username
                 password = STATIC.airflow_password
-                msg = {
+                msg = { "conf": {
                     "params": analytic[analytic_name], 
                     "source": msg.topic,
                     "value" : float(msg.payload) }
+                }
                 
                 #must be async
                 print("async to", url)

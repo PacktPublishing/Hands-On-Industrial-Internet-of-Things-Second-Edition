@@ -1,22 +1,29 @@
 import datetime
+import json
 from airflow.models.dag import DAG
 from airflow.operators.python import PythonOperator
 from airflow.utils.dates import days_ago
+
 
 def test_rule(**kwargs):
     """Print the Airflow context."""
     import logging
     logging.info("=>===========<=")
-    logging.info(kwargs)
+    logging.info(kwargs['params'])
     logging.info("=>===========<=")
-    source = kwargs['source']
-    value = kwargs['value']
-    threshold = kwargs['params']["threshold"]
+
+    params = kwargs['params']
+    source = params['source']
+    value = params['value']
+    threshold = params['params']["threshold"]
+
+    ret = "Success without issue"
 
     if float(value) >= float(threshold):
-        logging.info("Anomaly {value} > {threshold} on {source}")
-
-    return "My first DAG"
+        ret = f"Anomaly {value} > {threshold} on {source}"
+        logging.info(ret)
+     
+    return ret
 
 with DAG('ruledag', description='My First Rule DAG', 
     default_args = {'owner': 'iiot-book2'},
