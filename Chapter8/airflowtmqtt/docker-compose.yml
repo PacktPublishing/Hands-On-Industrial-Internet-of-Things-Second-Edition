@@ -1,0 +1,16 @@
+version: "3"
+services:
+  airflowmqtt:
+    container_name: airflowmqtt
+    image: airflowmqtt
+    build : .
+    environment:
+      - AIRFLOW_ENDPOINT=http://airflow:8080/api/v1/dags/{analytic}/dagRuns"
+      - AIRFLOW_USERNAME=airflow
+      - AIRFLOW_PASSWORD=airflow
+    networks: 
+    - iiot-book-2-net
+ 
+networks:
+    iiot-book-2-net: 
+      external: true

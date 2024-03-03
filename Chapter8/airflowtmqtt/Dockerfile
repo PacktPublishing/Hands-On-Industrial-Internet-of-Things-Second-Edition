@@ -1,7 +1,9 @@
-FROM python:3.9 
+FROM python:3.13.0a4
 
 RUN pip install requests beautifulsoup4
 RUN pip install paho-mqtt
 
-ADD src/main.py .
-CMD ["python", "./main.py"] 
+COPY ./config config
+COPY src .
+
+CMD ["python", "/main.py"] 

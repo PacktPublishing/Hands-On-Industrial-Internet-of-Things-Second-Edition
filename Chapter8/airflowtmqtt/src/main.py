@@ -24,14 +24,15 @@ def on_connect(client, userdata, flags, reason_code, properties):
 
 def call(url, username,password, msg):
     headers = {"Content-type": "application/json", "Accept": "application/json"}
+    msg = str(msg).replace("'","\"")
     try:
         with requests.session() as s:
             print(url, msg)
             response = s.post(url, 
-                              json=msg, 
-                              data="name:{}&password:{}".format(username,password),
-                              headers=headers)
-            print("Status Code", response.status_code)
+                                data=msg, 
+                                auth=(username, password),
+                                headers=headers)
+            print("Status Code", response.status_code, response.content)
     except Exception as e: 
         print("Failed",e)
 
@@ -65,7 +66,7 @@ def connect(host, port):
     
 
 if __name__ == "__main__":
-    STATIC.airflow_endpoint = os.getenv('AIRFLOW_ENDPOINT', "http://airflow:airflow@localhost:8080/api/v1/dags/{analytic}/dagRuns")
+    STATIC.airflow_endpoint = os.getenv('AIRFLOW_ENDPOINT', "http://localhost:8080/api/v1/dags/{analytic}/dagRuns")
     STATIC.airflow_username = os.getenv('AIRFLOW_USERNAME', "airflow")
     STATIC.airflow_password = os.getenv('AIRFLOW_PASSWORD', "airflow")
 
