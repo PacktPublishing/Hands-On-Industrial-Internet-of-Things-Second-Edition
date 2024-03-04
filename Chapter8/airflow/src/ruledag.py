@@ -33,3 +33,4 @@ with DAG('ruledag', description='My First Rule DAG',
     t1 = PythonOperator(task_id="test_rule",
                    provide_context=True,
                     python_callable=test_rule)
+    t1

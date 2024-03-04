@@ -27,8 +27,4 @@ to stop
 
 ## external run
 
-    curl -H "Content-type: application/json" -H "Accept: application/json" -X POST --user "airflow:airflow" "http://localhost:8080/api/v1/dags/ruledag/dagRuns" --data "{'value': '100'}"
-
-
-
     curl -X POST "http://localhost:8080/api/v1/dags/ruledag/dagRuns" -H  "accept: application/json" -H  "Content-Type: application/json" -d '{"conf":{}}' --user "airflow:airflow"
