@@ -1,5 +1,7 @@
-node-opcua-sampleserver
-=======================
+# Chapter 6 - Performing Industrial Protocols & Standards's exercise
+Using Node-RED with OPC UA sample server
+
+## 🚩 node-opcua-sampleserver
 
 A simple OPC-UA server based on node-opcua
 
@@ -7,9 +9,7 @@ based on
 https://github.com/node-opcua/node-opcua-sampleserver
 
 
-How To
-------
-
+# 🎮 How To
     git clone https://github.com/PacktPublishing/Hands-On-Industrial-Internet-of-Things-Second-Edition.git 
 
     cd Hands-On-Industrial-Internet-of-Things-Second-Edition 
@@ -21,8 +21,8 @@ How To
     npm start
 
 
-Start node-red docker container
-===============================
+## 🚀 Start node-red docker container
+
 
     mkdir data 
 

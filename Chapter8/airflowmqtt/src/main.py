@@ -61,12 +61,12 @@ def connect(host, port):
     mqttc = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
     mqttc.on_connect = on_connect
     mqttc.on_message = on_message
-    print(f"Connecting to  {host}, {port}")
     mqttc.connect(host, port, 60)
     mqttc.loop_forever()
     
 
 if __name__ == "__main__":
+    print("MQTT to Airflow trigger Service")
     STATIC.airflow_endpoint = os.getenv('AIRFLOW_ENDPOINT', "http://localhost:8080/api/v1/dags/{analytic}/dagRuns")
     STATIC.airflow_username = os.getenv('AIRFLOW_USERNAME', "airflow")
     STATIC.airflow_password = os.getenv('AIRFLOW_PASSWORD', "airflow")
@@ -76,7 +76,10 @@ if __name__ == "__main__":
     with open(config_path) as f:
         STATIC.mapping = json.load(f)
     
+    print(f"Mappping {STATIC.mapping}")
+    
     # start
     mqtt_host = os.getenv('MQTT_HOST', "mosquitto")
     mqtt_port = os.getenv('MQTT_PORT', 1883)
+    print(f"Connecting to  {mqtt_host}, {mqtt_port}")
     connect(mqtt_host,mqtt_port)

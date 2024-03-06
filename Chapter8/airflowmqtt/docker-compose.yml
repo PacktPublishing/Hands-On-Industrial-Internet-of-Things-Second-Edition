@@ -4,6 +4,7 @@ services:
     container_name: airflowmqtt
     image: airflowmqtt
     build : .
+    tty: true
     environment:
       - AIRFLOW_ENDPOINT=http://airflow:8080/api/v1/dags/{analytic}/dagRuns"
       - AIRFLOW_USERNAME=airflow

@@ -793,3 +793,34 @@
 1709500205: New client connected from 172.19.0.1:48006 as auto-7DB94974-0C84-1AD4-F101-FCE0F08E76BC (p2, c1, k60).
 1709500396: Client auto-7DB94974-0C84-1AD4-F101-FCE0F08E76BC closed its connection.
 1709500439: Client edge1 disconnected.
+1709667182: mosquitto version 2.0.18 starting
+1709667182: Config loaded from /mosquitto/config/mosquitto.conf.
+1709667182: Opening ipv4 listen socket on port 1883.
+1709667182: Opening ipv6 listen socket on port 1883.
+1709667182: mosquitto version 2.0.18 running
+1709667183: New connection from 172.19.0.5:44138 on port 1883.
+1709667183: New client connected from 172.19.0.5:44138 as telegraf (p2, c1, k60).
+1709667189: New connection from 172.19.0.6:45049 on port 1883.
+1709667189: New client connected from 172.19.0.6:45049 as auto-A6A60512-9261-742F-CD5C-C572658A9153 (p2, c1, k60).
+1709667271: Client auto-A6A60512-9261-742F-CD5C-C572658A9153 closed its connection.
+1709667354: New connection from 172.19.0.6:60041 on port 1883.
+1709667354: New client connected from 172.19.0.6:60041 as auto-F0AF4156-158A-40DC-F8FA-D48B096A2F19 (p2, c1, k60).
+1709667395: Client auto-F0AF4156-158A-40DC-F8FA-D48B096A2F19 closed its connection.
+1709667435: New connection from 172.19.0.6:38299 on port 1883.
+1709667435: New client connected from 172.19.0.6:38299 as auto-115B09D9-89D8-505A-335A-79A17E362A42 (p2, c1, k60).
+1709667520: Client auto-115B09D9-89D8-505A-335A-79A17E362A42 closed its connection.
+1709667528: New connection from 172.19.0.6:41911 on port 1883.
+1709667528: New client connected from 172.19.0.6:41911 as auto-33A9624F-E73F-2859-32E3-9E1750B29384 (p2, c1, k60).
+1709667543: Client auto-33A9624F-E73F-2859-32E3-9E1750B29384 closed its connection.
+1709667793: New connection from 172.19.0.6:58733 on port 1883.
+1709667793: New client connected from 172.19.0.6:58733 as auto-85B4E30D-BA2B-2617-CD38-38B19E55B9A5 (p2, c1, k60).
+1709667805: Client auto-85B4E30D-BA2B-2617-CD38-38B19E55B9A5 closed its connection.
+1709667820: New connection from 172.19.0.6:58759 on port 1883.
+1709667820: New client connected from 172.19.0.6:58759 as auto-A3A501BB-6696-2C34-F28C-9C57689C5965 (p2, c1, k60).
+1709667829: Client auto-A3A501BB-6696-2C34-F28C-9C57689C5965 closed its connection.
+1709667964: New connection from 172.19.0.6:49495 on port 1883.
+1709667964: New client connected from 172.19.0.6:49495 as auto-B66B987D-F9AF-803A-06AA-CB5A02BB719D (p2, c1, k60).
+1709667979: Client auto-B66B987D-F9AF-803A-06AA-CB5A02BB719D closed its connection.
+1709667980: Client telegraf disconnected.
+1709667980: mosquitto version 2.0.18 terminating
+1709667980: Saving in-memory database to /mosquitto/data//mosquitto.db.

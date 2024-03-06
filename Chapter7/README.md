@@ -1,5 +1,13 @@
-work with Docker
-================
+# Chapter 7 - Developing Industrial IoT and Cloud Architecture
+Exercise with Docker, InfluxDb and Node-RED.
+
+Structure of the project:
+* 📁 node-opcua-sampleserver : simple OPC UA emulator
+* 📁 node-red : edge to read data from OPC UA emulatior
+* docker-compose.yml : the docker compose file to startup the services node-red and OPC-UA server
+
+## 🚀 Work with Docker
+
 create a file called Dockerfile; Finally copy into the file the following command-line instructions: 
 
     FROM	alpine 
@@ -18,15 +26,10 @@ create a file called Dockerfile; Finally copy into the file the following comman
 
     CMD ["python3", "-m", "http.server", "8080"] 
 
- 
-
 From the command console, you have to build a simple HTML page called index.html: 
 
     mkdir static 
-
     echo "<html><body>IIoT</body></html>" > static/index.html 
-
-  
 
 Now follow these steps: 
 
@@ -39,8 +42,8 @@ Run your Docker container:
     docker run -p 80:8080 micropy 
 
 
-work with TSDB
-==============
+## 🚀 Work with TSDB
+
 Create data directory:
 
     mkdir data
