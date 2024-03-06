@@ -3,7 +3,7 @@ Hands-On Industrial Internet of Things Second Edition, published by Packt
 
 Here you can find all the source codes of the chapters of the book Hands-On Industrial Internet of Things Second Edition, published by Packt
 
-## Chapters
+## 📚 Chapters
 * Performing Industrial Protocols & Standards's exercise
 * Developing Industrial IoT and Cloud Architecture
 * Implementing a On-Premise Industrial IoT platform
