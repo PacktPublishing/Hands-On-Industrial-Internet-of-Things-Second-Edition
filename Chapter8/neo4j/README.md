@@ -1,6 +1,10 @@
+# neo4j asset registry
 
+Structure of the project:
+* 📁 src : python code of neo4j client
+* docker-compose.yml : docker compose file to strat neo4j server
 
-## Code
+## 🎮 How To
 
 Create assets:
 
