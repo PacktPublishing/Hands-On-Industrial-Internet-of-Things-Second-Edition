@@ -1,4 +1,4 @@
 # node-opcua-sampleserver
-A simple OPC-UA server based on node-opcua
+A simple OPC-UA server based on node-opcua. It supports Dockerfile.
 
 

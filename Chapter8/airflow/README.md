@@ -3,7 +3,7 @@
 Structure of the project:
 * 📁 src : folder of the analytocs to be copied on dags folder
 * 📁 config dags plugins logs : empty folder to be created before starting airflow
-* docker-compose.yml : docker compsoe file to start the airflow services
+* 🐳 docker-compose.yml : docker compsoe file to start the airflow services
 
 ## 🎮 How To
     mkdir ./dags 

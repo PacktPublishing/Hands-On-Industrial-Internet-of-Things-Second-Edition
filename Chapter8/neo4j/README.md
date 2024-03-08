@@ -2,7 +2,7 @@
 
 Structure of the project:
 * 📁 src : python code of neo4j client
-* docker-compose.yml : docker compose file to start neo4j server
+* 🐳 docker-compose.yml : docker compose file to start neo4j server
 
 ## 🎮 How To
 

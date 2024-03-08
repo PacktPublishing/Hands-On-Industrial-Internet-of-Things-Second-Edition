@@ -4,7 +4,7 @@ Exercise with Docker, InfluxDb and Node-RED.
 Structure of the project:
 * 📁 node-opcua-sampleserver : simple OPC UA emulator
 * 📁 node-red : edge to read data from OPC UA emulatior
-* docker-compose.yml : the docker compose file to startup the services node-red and OPC-UA server
+* 🐳 docker-compose.yml : the docker compose file to startup the services node-red and OPC-UA server
 
 ## 🚀 Work with Docker
 
