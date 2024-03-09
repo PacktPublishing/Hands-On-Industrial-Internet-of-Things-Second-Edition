@@ -1,0 +1,1 @@
+Placeholder folfdere where to place certifivcate of IOT Core

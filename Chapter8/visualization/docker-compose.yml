@@ -1,0 +1,11 @@
+version: "3"
+services:
+  grafana:
+    image: grafana/grafana-oss
+    ports:
+    - 3000:3000
+    networks: 
+    - iiot-book-2-net
+networks:
+    iiot-book-2-net: 
+      external: true

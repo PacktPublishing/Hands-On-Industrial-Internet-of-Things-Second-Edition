@@ -1,0 +1,20 @@
+version: '2'
+services:
+  nodered:
+    image: iiot-book-2/node-red-opc-awsiot
+    build: ./node-red
+    ports:
+        - "1880:1880"
+    volumes:
+        - ./data:/data
+        - ./certificates:/certificates
+    networks: 
+      - iiot-book-2-net-edge
+  opc-ua-server:
+    build: ./node-opcua-sampleserver
+    ports:
+      - "26543:26543"
+    networks: 
+      - iiot-book-2-net-edge
+networks:
+  iiot-book-2-net-edge: 
