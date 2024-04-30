@@ -1,0 +1,51 @@
+version: '3'
+services:
+  greengrass:
+    image: iiot-book-2/greengrass-awsiot
+    build: 
+      context: ./greengrass
+      args:
+        - AWS_REGION=eu-central-1 
+        - AWS_DEVICE_NAME=GreengrassDevice1
+        - AWS_DEVICE_GROUP=GreengrassQuickStartGroup
+        # uncomment and add access key
+        #- AWS_ACCESS_KEY_ID= #YOUR_ACCESS_KEY_ID
+        #- AWS_SECRET_ACCESS_KEY= #YOUR_SECRET_ACCESS_KEY
+        - AWS_SESSION_TOKEN=
+    #entrypoint: /bin/bash
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    cgroup: host
+    cap_add:
+      - SYS_ADMIN
+      - NET_ADMIN
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:rw
+    networks: 
+      - iiot-book-2-net-edge
+    ports:
+      - "8883:8883"
+    environment:
+      - AWS_SESSION_TOKEN=
+      # uncomment and add eccess key
+      #- AWS_ACCESS_KEY_ID= #YOUR_ACCESS_KEY_ID
+      #- AWS_SECRET_ACCESS_KEY= #YOUR_SECRET_ACCESS_KEY
+
+  nodered:
+    image: iiot-book-2/node-red-opc-awsiot
+    build: ./node-red
+    ports:
+        - "1880:1880"
+    volumes:
+        - ./data:/data
+        - ./certificates:/certificates
+    networks: 
+      - iiot-book-2-net-edge
+  opc-ua-server:
+    build: ./node-opcua-sampleserver
+    ports:
+      - "26543:26543"
+    networks: 
+      - iiot-book-2-net-edge
+networks:
+  iiot-book-2-net-edge:
