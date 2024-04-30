@@ -3,9 +3,10 @@
 Structure of the project:
 * 📁 node-red : edge with AWS IOT Support 
 * 📁 node-opcua-sampleserver : OPC UA Emulator
-* 📁 certificates : 
+* 📁 certificates : folder where to save certificates
 * 🐳 docker-compose.yml : docker compose file to start services
 * 🐳 docker-compose-greengrass.yml : docker compose file to start greengrass
+* 🐳 docker-compose-device.yml : docker compose file to start device based on AWS SDK
 
 
 ## Policy example
