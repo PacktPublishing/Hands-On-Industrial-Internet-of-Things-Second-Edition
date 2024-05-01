@@ -5,7 +5,7 @@ Here you can find all the source codes of the chapters of the book _Hands-On Ind
 
 > :warning: This Book will be available in Q3 2024.
 
-## 📚 Chapters from 6 to 12
+## :books: Chapters from 6 to 12
 * Performing Industrial Protocols & Standards's exercise
 * Developing Industrial IoT and Cloud Architecture
 * Implementing a On-Premise Industrial IoT platform

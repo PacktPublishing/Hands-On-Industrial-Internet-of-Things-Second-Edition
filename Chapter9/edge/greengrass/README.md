@@ -1,5 +1,7 @@
 # grengrass
 
+* :whale: Docker file to build greengrass image
+
 ## build linux container for greengrass
      docker compose -f .\docker-compose-awsiot.yml build
      docker exec edge-greengrass-1 /bin/bash

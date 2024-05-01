@@ -1,6 +1,6 @@
 # TimeStrean and IOT Analytics/Events
 
-* 📄 json file : source code a json file template for IOT Events
+* :page_facing_up: json file : source code a json file template for IOT Events
 
 ## Query for Timestream
 
