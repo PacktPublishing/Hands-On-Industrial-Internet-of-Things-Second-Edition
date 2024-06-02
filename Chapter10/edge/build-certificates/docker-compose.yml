@@ -1,0 +1,10 @@
+version: '2'
+services:
+  certificates:
+    image: iiot-book-2/certificates
+    build: .
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    entrypoint: /bin/bash
+    volumes:
+        - ./workdir:/workdir
