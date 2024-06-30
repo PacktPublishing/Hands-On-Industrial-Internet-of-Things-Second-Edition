@@ -5,6 +5,7 @@ Structure of the project:
 * :file_folder: node-opcua-sampleserver : OPC UA Emulator
 * :whale: docker-compose.yml : docker compose file to start services
 * :file_folder: python-device : python device
+* :whale: docker-compose-python.yml : docker compose file to start services and python devices
 
 ## Code for the Node-RED  function
 

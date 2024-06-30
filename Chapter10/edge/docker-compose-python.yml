@@ -1,12 +1,11 @@
 version: '2'
 services:
-  nodered:
-    image: iiot-book-2/node-red-opc
-    build: ./node-red
-    ports:
-        - "1880:1880"
-    volumes:
-        - ./data:/data
+  python-device:
+    image: iiot-book-2/python-device
+    build: ./python-device
+    tty: True
+    environment:
+        - IOTHUB_DEVICE_CONNECTION_STRING=HostName=iiot-book-2-hub.azure-devices.net;DeviceId=device1;SharedAccessKey=OCSXWb3M+UmKf1Kw5ywhpy+MRmsTc7WDRAIoTIPm7kw=
     networks: 
       - iiot-book-2-net-edge
   opc-ua-server:

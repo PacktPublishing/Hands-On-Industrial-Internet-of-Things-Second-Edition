@@ -1,7 +1,7 @@
-FROM node:alpine
+FROM node
 LABEL org.packt.image.authors="giacomo.veneri@gmail.com"
 
-RUN apk add --update openssl
+RUN apt-get install openssl
 RUN mkdir /app
 WORKDIR /app
 COPY package.json /app
