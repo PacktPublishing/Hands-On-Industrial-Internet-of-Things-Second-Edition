@@ -5,7 +5,7 @@ services:
     build: ./python-device
     tty: True
     environment:
-        - IOTHUB_DEVICE_CONNECTION_STRING=HostName=iiot-book-2-hub.azure-devices.net;DeviceId=device1;SharedAccessKey=OCSXWb3M+UmKf1Kw5ywhpy+MRmsTc7WDRAIoTIPm7kw=
+        - IOTHUB_DEVICE_CONNECTION_STRING=<your connection strin>
     networks: 
       - iiot-book-2-net-edge
   opc-ua-server:

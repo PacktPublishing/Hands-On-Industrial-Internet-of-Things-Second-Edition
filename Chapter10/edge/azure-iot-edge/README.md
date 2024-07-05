@@ -1,6 +1,12 @@
 # Deploy Azure Iot Edge on Docker
 
-Based on https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-single-device-linux-symmetric?view=iotedge-1.5&tabs=azure-portal%2Cubuntu
+Based on 
+
+* https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-single-device-linux-symmetric?view=iotedge-1.5&tabs=azure-portal%2Cubuntu
+* https://github.com/Azure/Industrial-IoT/blob/main/docs/opc-publisher/readme.md
+
+* :
+
 
 
 ## Script to deploy Azure Iot Edge runtime
@@ -25,3 +31,4 @@ Based on https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-singl
 
     sudo iotedge system status
     sudo iotedge list
+
