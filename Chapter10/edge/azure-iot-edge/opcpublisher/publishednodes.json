@@ -1,0 +1,27 @@
+[  
+
+    {  
+
+        "EndpointUrl": "opc.tcp://localhost:26543",  
+
+        "OpcNodes": [  
+
+            {  
+
+                "DisplayName": "temperature",  
+
+                "Id": "ns=1;s=CPU",  
+
+                "ConditionHandling": {  
+
+                    "UpdateInterval": 10  
+
+                }  
+
+            }  
+
+        ]  
+
+    }  
+
+] 
