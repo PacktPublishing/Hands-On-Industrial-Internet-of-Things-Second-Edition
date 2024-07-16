@@ -1,0 +1,7 @@
+notebook
+seaborn
+pandas
+matplotlib
+pyod
+scikit-learn
+xgboost

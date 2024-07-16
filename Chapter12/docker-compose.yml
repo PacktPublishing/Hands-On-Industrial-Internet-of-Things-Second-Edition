@@ -1,0 +1,20 @@
+version: '2'
+services:
+  pytorch-lab:
+    build: ./pytorch-lab
+    volumes:
+    - ./work:/work
+    ports:
+      - "8888:8888"
+    networks: 
+      - iiot-book-2-net
+    # uncomment if you have GPU support installed
+    # deploy: 
+      # resources:
+        #reservations:
+          #devices:
+          #  - driver: nvidia
+          #    count: 1
+          #    capabilities: [gpu]
+networks:
+  iiot-book-2-net: 
