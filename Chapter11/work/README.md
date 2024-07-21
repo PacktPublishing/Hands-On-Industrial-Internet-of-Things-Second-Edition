@@ -1,7 +1,6 @@
 # Performing Diagnostic, Maintenance and Predictive Analytics
-* :snake: Jupyter Notebooks
+* :snake: Jupyter Notebooks for anomaly detection
+* :snake: Jupyter Notebooks for forecasting analytic
+* :snake: Jupyter Notebooks for precsriptive based on LLM
 
 ## Dataset
-
-* :spiral_notepad: data_turbine.csv - source https://www.kaggle.com/datasets/berkerisen/wind-turbine-scada-dataset?resource=download - license Unknown
-* :spiral_notepad: data_airplane.csv - source NASA - license Free
