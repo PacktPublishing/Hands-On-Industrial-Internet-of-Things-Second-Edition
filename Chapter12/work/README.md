@@ -1,4 +1,6 @@
-
+# Implementing a Digital Twin – Advanced Analytics 
+* :snake: RUL algorithm in Pytorch
+* :snake: Widn Turbine model
 
 
 ### Source 
