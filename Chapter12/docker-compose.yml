@@ -3,7 +3,7 @@ services:
   pytorch-lab:
     build: ./pytorch-lab
     volumes:
-    - ./work:/work
+    - ./work:/workspace/work
     ports:
       - "8888:8888"
     networks: 
