@@ -1,2 +1,5 @@
-Chapter11/work/anomaly_detection/aggregate_data.ipynb
 **/.ipynb_checkpoints/
+**/minio_data/
+**/db_data/
+**/__pycache__/
+**/wind_turbine/

@@ -1,0 +1,13 @@
+version: '2'
+services:
+  azure-ml-lab:
+    build: .
+    volumes:
+    - ./work:/home/jovyan/work
+    command: "start-notebook.sh --NotebookApp.token=''"
+    ports:
+      - "8888:8888"
+    networks: 
+      - iiot-book-2-net
+networks:
+  iiot-book-2-net: 
