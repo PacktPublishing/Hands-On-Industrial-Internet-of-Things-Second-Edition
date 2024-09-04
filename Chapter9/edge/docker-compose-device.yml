@@ -6,7 +6,7 @@ services:
         context: ./connect_device_package
         args:
           - AWS_DEVICE_NAME=device2
-          - AWS_IOT_ENDPOINT=a29ou9oy5zw49b-ats.iot.us-east-1.amazonaws.com
+          - AWS_IOT_ENDPOINT=<your url>.iot.<your region>.amazonaws.com
           - AWS_DEVICE_TOPIC=/devices/device1/sensors
     volumes:
         - ./connect_device_package/aws-iot-device-sdk-python-v2/samples:/samples
