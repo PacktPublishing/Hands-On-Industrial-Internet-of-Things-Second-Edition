@@ -13,4 +13,4 @@ Here you can find all the source codes of the chapters of the book _Hands-On Ind
 * Implementing a Practical INDUSTRIAL Azure IOT Solution
 * Performing Diagnostic, Maintenance and Predictive Analytics
 * Implementing a Digital Twin: Advanced Analytics
-* Performing an Analytics' Exercise
+* Deploying Analytics
