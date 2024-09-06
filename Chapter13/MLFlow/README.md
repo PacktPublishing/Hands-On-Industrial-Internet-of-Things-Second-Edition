@@ -1,8 +1,13 @@
 # Using MLflow to deploy analytics
 
+:whale2: docker-compose.yml: docker compose for jupyter notebook, minio and MLflow
+:whale2: Dmlflow/ockerfile: Dockerfile for MLflow image
+:file_folder: work: code 
+
+## Start Server
+
 Start servers:
       docker-compose --env-file config.env up -d --build 
-
 
 ## Connect to MLFlow to serve model
 
