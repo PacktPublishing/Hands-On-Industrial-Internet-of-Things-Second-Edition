@@ -1,7 +1,5 @@
-# Chapter 9 - Implementing a AWS INDUSTRIAL IOT Solution
+# Chapter 9 - Building a AWS INDUSTRIAL IOT Solution
 Build end to end data flow : from OPC-UA server to Visualization with AWS
 
 Structure of the project
 * 📁 edge folder : source code to implement edge
-* 📁 storage folder : source code for Timestream, IOT Events and IOT Analytics
-* 📁 visualization folder : source code for grafana

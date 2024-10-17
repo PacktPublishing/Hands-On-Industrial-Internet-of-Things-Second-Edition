@@ -1,9 +1,6 @@
-# Implementing a Practical INDUSTRIAL Azure IOT Solution
+# Chapter 10 - Implementing INDUSTRIAL IOT Data Flow with AWS
+Build end to end data flow : from OPC-UA server to Visualization with AWS
 
-Structure of the project:
-* :file_folder: edhge: Azure IoT edge 
-* :whale: docker-compose.yml : docker compose file to start edge with Node-RED
-* :whale: docker-compose-python.yml : docker compose file to start edge with Azure SDK
-* :file_folder: analytics : data analytics
-
-* :file_folder: data explorer : Azure Data Explorer
+Structure of the project
+* 📁 storage folder : source code for Timestream, IOT Events and IOT Analytics
+* 📁 visualization folder : source code for grafana

@@ -1,3 +1,5 @@
-# Implementing a Digital Twin – Advanced Analytics 
-* :whale: Docker compose file for jupyter
-* :file_folder: work folder: data and algorithms
+# Chapter 12 - Implementing INDUSTRIAL IOT Data Flow with Azure
+
+Structure of the project:
+* :file_folder: analytics : data analytics
+* :file_folder: data explorer : Azure Data Explorer
